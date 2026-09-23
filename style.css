@@ -1,0 +1,190 @@
+/* ====== Estilos próprios, complementares ao Bootstrap ====== */
+ 
+:root {
+  --cor-primaria: #3a3a5c;
+  --cor-destaque: #ff8c42;
+}
+ 
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: #faf9f7;
+  color: #2b2b2b;
+}
+ 
+h1, h2 {
+  font-weight: 700;
+  color: var(--cor-primaria);
+}
+ 
+/* Navbar */
+.navbar {
+  background-color: var(--cor-primaria);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+ 
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+ 
+.navbar .nav-link:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+ 
+.navbar .nav-link.active {
+  color: #ffffff;
+  background-color: #52b788; /* Cor de destaque verde */
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+ 
+.navbar-brand {
+  color: #fff;
+  font-weight: 700;
+}
+ 
+/* Botão de mudar tema */
+.btn-tema {
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-left: 0.75rem;
+  transition: transform 0.25s ease, border-color 0.2s ease;
+}
+ 
+.btn-tema:hover {
+  border-color: var(--cor-destaque);
+  transform: rotate(20deg);
+}
+ 
+/* ====== Modo escuro ====== */
+body.tema-escuro {
+  background-color: #1c1c26;
+  color: #e8e8e8;
+}
+ 
+body.tema-escuro h1,
+body.tema-escuro h2 {
+  color: #f2f2f2;
+}
+ 
+body.tema-escuro .card,
+body.tema-escuro .list-group-item {
+  background-color: #2a2a38;
+  color: #e8e8e8;
+}
+ 
+body.tema-escuro .hobby-explicacao {
+  color: #bbb;
+}
+ 
+body.tema-escuro footer {
+  color: #999;
+}
+ 
+/* Foto de perfil */
+.perfil-foto {
+  border: 4px solid var(--cor-destaque);
+}
+ 
+/* Listas */
+.hobby-list .list-group-item,
+.contactos-list .list-group-item {
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding: 0.9rem 1rem;
+  transition: transform 0.15s ease;
+}
+ 
+.hobby-list .list-group-item:hover,
+.contactos-list .list-group-item:hover {
+  transform: translateX(6px);
+  background-color: #fff4ea;
+}
+ 
+/* Botão que abre a explicação do hobby */
+.hobby-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1rem;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+ 
+.hobby-explicacao {
+  margin: 0.6rem 0 0 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+ 
+/* Botões */
+.btn-primary {
+  background-color: var(--cor-destaque);
+  border-color: var(--cor-destaque);
+}
+ 
+.btn-primary:hover {
+  background-color: #e07530;
+  border-color: #e07530;
+}
+ 
+.btn-outline-primary {
+  color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+}
+ 
+.btn-outline-primary:hover {
+  background-color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+}
+ 
+footer {
+  color: #888;
+  font-size: 0.9rem;
+}
+ 
+/* ====== Transição entre páginas ====== */
+body {
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+ 
+body.pagina-a-entrar {
+  opacity: 0;
+}
+ 
+body.pagina-a-sair {
+  opacity: 0;
+}
+ 
+/* ====== Cartões de projeto (API do GitHub) ====== */
+.projeto-card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+ 
+.projeto-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+ 
+body.tema-escuro .projeto-card {
+  background-color: #2a2a38;
+  color: #e8e8e8;
+}
+ 

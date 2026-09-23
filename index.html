@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MRGONCS - Sobre mim</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MR GONCS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Sobre mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hobbies.html">Os meus hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactos.html">Contactos</a>
+              <li class="nav-item">
+                  <li class="nav-item">
+            <a class="nav-link" href="projeto.html">Projetos</a>
+              <li class="nav-item">
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container py-5">
+    <div class="row align-items-center g-5">
+      <div class="col-md-4 text-center">
+        <img src="fotodeperfil.jpg" height="50" width="250"
+             alt="Foto de perfil de Gonçalo Carvalho"
+             class="img-fluid rounded-circle shadow perfil-foto">
+      </div>
+      <div class="col-md-8">
+        <h1>MR GONCS</h1>
+        <p class="lead">Bem-vindo à minha página de perfil!</p>
+        <p>
+          Sou um <strong>estudante</strong> e grande parte do que sei sobre <strong>HTML</strong>,
+          <strong>CSS</strong> e <strong>JavaScript</strong> já vinha a aprender de forma independente antes mesmo de 
+          entrar no curso. Este site foi construído como exercício para juntar todo esse percurso autodidata e aplicá-lo num mini-portefólio pessoal.
+        </p>
+        <p>
+          Quando não estou a programar, gosto de explorar novas ideias e de
+          <em>experimentar</em> coisas novas — vê mais sobre isso na aba
+          <strong>Os meus hobbies</strong>.
+        </p>
+        <a href="https://github.com/MRGONCS" target="_blank" rel="noopener" class="btn btn-outline-primary">
+          Visita o meu GitHub
+        </a>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Bordão</h2>
+        <ul>
+          <li>"Não Compare sua vida com as dos Outros, não tens ideia de como foram Trilhadas".</li>
+
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div class="card bg-light border-0">
+          <div class="card-body">
+            <h5 class="card-title">Contador de visitas 👋</h5>
+            <p class="card-text">Clica no botão para veres o contador em ação.</p>
+            <button id="btnContador" class="btn btn-primary">Clica aqui</button>
+            <p class="mt-3">Cliques: <span id="contador">0</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="text-center py-4">
+    <p class="mb-0">&copy; 2026 MRGONCS. Feito com HTML, CSS, JS e Bootstrap.</p>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
